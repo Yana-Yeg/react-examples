@@ -3,7 +3,7 @@ import CatList from "../components/CatList";
 const RobotsPage = () => {
   return (
     <>
-      <h1>Cats</h1>
+      <h1 style={{ textAlign: "center" }}>Cats</h1>
       <CatList />
     </>
   );

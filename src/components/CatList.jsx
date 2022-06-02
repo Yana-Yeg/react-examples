@@ -22,15 +22,15 @@ const CatList = () => {
           onChange={(e) => setInput(e.target.value)}
         />
       </form>
-      <h2>Cat List</h2>
+      {/* <h2>Cat List</h2> */}
       <div className={style.list}>
         {robotList.map((robo) => (
           <img
             onClick={() =>
               setRobotList(robotList.filter((robot) => robot !== robo))
             }
-            width={200}
-            height={200}
+            width={300}
+            height={300}
             src={`https://robohash.org/${robo}?set=set4`}
             alt={`${robo}`}
           ></img>

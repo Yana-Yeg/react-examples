@@ -16,8 +16,12 @@ const ConverterPage = () => {
 
   return (
     <div>
-      <h1>Current exchange rate for {today}</h1>
-      {loading && <h3>Please wait. Loading...</h3>}
+      <h1 style={{ textAlign: "center" }}>Current exchange rate for {today}</h1>
+      {loading && (
+        <h3 style={{ textAlign: "center", fontSize: "30px", color: "red" }}>
+          Please wait. Loading...
+        </h3>
+      )}
       <Tablo />
       <Exchange />
     </div>

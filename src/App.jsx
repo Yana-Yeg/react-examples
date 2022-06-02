@@ -11,11 +11,15 @@ function App() {
   return (
     <>
       <nav style={{ borderBottom: "2px solid lightgrey" }}>
-        <NavLink to="/" exact>
+        <NavLink to="/" exact className="link" activeClassName="activeLink">
           Home
         </NavLink>
-        <NavLink to="/cats">Cats</NavLink>
-        <NavLink to="/converter">Currency converter</NavLink>
+        <NavLink to="/cats" className="link" activeClassName="activeLink">
+          Cats
+        </NavLink>
+        <NavLink to="/converter" className="link" activeClassName="activeLink">
+          Currency converter
+        </NavLink>
       </nav>
 
       <Suspense fallback={<div>Loading...</div>}>
