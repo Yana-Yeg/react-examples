@@ -1,9 +1,12 @@
 import { useState } from "react";
+import Info from "../Info/Info";
 import style from "./CatList.module.css";
 
 const CatList = () => {
   const [input, setInput] = useState("");
   const [robotList, setRobotList] = useState([]);
+
+  const instruction = "Enter your word and see unique cat with this name. ";
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -13,6 +16,7 @@ const CatList = () => {
 
   return (
     <div className={style.wrapper}>
+      <Info text={instruction} />
       <form onSubmit={onSubmit}>
         <input
           className={style.input}

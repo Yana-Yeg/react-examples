@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import Info from "../Info/Info";
 import style from "./ShortList.module.css";
-import Icons from "../../images/sprite.svg";
 
 const ShortList = () => {
   const [input, setInput] = useState("");
@@ -8,6 +8,9 @@ const ShortList = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalText, setModalText] = useState("");
   const modalRef = useRef();
+
+  const instruction =
+    "Enter your word or phrase. Choose from the list and see full content";
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -41,15 +44,7 @@ const ShortList = () => {
   return (
     <>
       <div className={style.wrapper}>
-        <div className={style.info}>
-          <svg className={style.image}>
-            <use xlinkHref={`${Icons}#icon-info1`} />
-          </svg>
-          <p className={style.text}>Enter your word or phrase</p>
-          <p className={style.text}>
-            Choose from the list and see full content
-          </p>
-        </div>
+        <Info text={instruction} />
         <form onSubmit={submitHandler}>
           <input
             value={input}

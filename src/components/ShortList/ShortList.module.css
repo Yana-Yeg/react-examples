@@ -1,18 +1,6 @@
 .wrapper {
     text-align: center;
 }
-.info{
-    /* background-color: rgb(207, 233, 207); */
-    position: absolute;
-    left: 50px;
-    top: 100px;
-    width: 300px;
-    height: 130px;
-    border-radius: 20px;
-    border: 15px double red;
-    font-size: 20px;
-    color: tomato;
-}
 .input {
     font-size: 20px;
     height: 25px;
@@ -27,14 +15,4 @@
     font-size: 20px;
     border-radius: 5px;
     border: 8px inset blue;
-}
-.image{
-    width: 32px;
-    height: 32px;
-    fill: red;
-    margin-top: 5px;
-}
-.text{
-    padding: 5px;
-    margin: 0;
 }
