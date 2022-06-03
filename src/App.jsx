@@ -6,6 +6,7 @@ import "./App.css";
 import ConverterPage from "./pages/ConverterPage";
 import HomePage from "./pages/HomePage";
 import CatsPage from "./pages/CatsPage";
+import ChecklistPage from "./pages/ChecklistPage";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         <NavLink to="/converter" className="link" activeClassName="activeLink">
           Currency converter
         </NavLink>
+        <NavLink to="/checklist" className="link" activeClassName="activeLink">
+          Checklist
+        </NavLink>
       </nav>
 
       <Suspense fallback={<div>Loading...</div>}>
@@ -29,6 +33,9 @@ function App() {
           </Route>
           <Route path="/converter">
             <ConverterPage />
+          </Route>
+          <Route path="/checklist">
+            <ChecklistPage />
           </Route>
           <Route exact path="/">
             <HomePage />
