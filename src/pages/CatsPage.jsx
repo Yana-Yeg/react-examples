@@ -1,4 +1,4 @@
-import CatList from "../components/CatList";
+import CatList from "../components/Catlist/CatList";
 
 const RobotsPage = () => {
   return (

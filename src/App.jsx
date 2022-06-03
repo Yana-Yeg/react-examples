@@ -7,6 +7,7 @@ import ConverterPage from "./pages/ConverterPage";
 import HomePage from "./pages/HomePage";
 import CatsPage from "./pages/CatsPage";
 import ChecklistPage from "./pages/ChecklistPage";
+import ShortListPage from "./pages/ShortListPage";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
         <NavLink to="/checklist" className="link" activeClassName="activeLink">
           Checklist
         </NavLink>
+        <NavLink to="/shortlist" className="link" activeClassName="activeLink">
+          Shortlist
+        </NavLink>
       </nav>
 
       <Suspense fallback={<div>Loading...</div>}>
@@ -36,6 +40,9 @@ function App() {
           </Route>
           <Route path="/checklist">
             <ChecklistPage />
+          </Route>
+          <Route path="/shortlist">
+            <ShortListPage />
           </Route>
           <Route exact path="/">
             <HomePage />
