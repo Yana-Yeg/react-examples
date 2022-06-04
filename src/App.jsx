@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import CatsPage from "./pages/CatsPage";
 import ChecklistPage from "./pages/ChecklistPage";
 import ShortListPage from "./pages/ShortListPage";
+import QuizPage from "./pages/QuizPage";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         <NavLink to="/shortlist" className="link" activeClassName="activeLink">
           Shortlist
         </NavLink>
+        <NavLink to="/quiz" className="link" activeClassName="activeLink">
+          Quiz
+        </NavLink>
       </nav>
 
       <Suspense fallback={<div>Loading...</div>}>
@@ -43,6 +47,9 @@ function App() {
           </Route>
           <Route path="/shortlist">
             <ShortListPage />
+          </Route>
+          <Route path="/quiz">
+            <QuizPage />
           </Route>
           <Route exact path="/">
             <HomePage />
