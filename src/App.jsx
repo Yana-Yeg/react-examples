@@ -9,6 +9,7 @@ import CatsPage from "./pages/CatsPage";
 import ChecklistPage from "./pages/ChecklistPage";
 import ShortListPage from "./pages/ShortListPage";
 import QuizPage from "./pages/QuizPage";
+import RandomuserPage from "./pages/RandomuserPage";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
         <NavLink to="/quiz" className="link" activeClassName="activeLink">
           Quiz
         </NavLink>
+        <NavLink to="/randomuser" className="link" activeClassName="activeLink">
+          Randomuser
+        </NavLink>
       </nav>
 
       <Suspense fallback={<div>Loading...</div>}>
@@ -50,6 +54,9 @@ function App() {
           </Route>
           <Route path="/quiz">
             <QuizPage />
+          </Route>
+          <Route path="/randomuser">
+            <RandomuserPage />
           </Route>
           <Route exact path="/">
             <HomePage />

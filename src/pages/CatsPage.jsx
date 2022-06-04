@@ -1,6 +1,6 @@
 import CatList from "../components/Catlist/CatList";
 
-const RobotsPage = () => {
+const CatsPage = () => {
   return (
     <>
       <h1 style={{ textAlign: "center" }}>Cats</h1>
@@ -9,4 +9,4 @@ const RobotsPage = () => {
   );
 };
 
-export default RobotsPage;
+export default CatsPage;

@@ -44,7 +44,12 @@ const Quiz = () => {
         <>
           <h3>{QUESTIONS[currentQuestion].question}</h3>
           {QUESTIONS[currentQuestion].answers.map((answer, index) => (
-            <p onClick={() => handleAnswer(currentQuestion, index)}>{answer}</p>
+            <p
+              onClick={() => handleAnswer(currentQuestion, index)}
+              key={answer + index}
+            >
+              {answer}
+            </p>
           ))}
         </>
       )}
