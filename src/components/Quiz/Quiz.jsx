@@ -9,13 +9,18 @@ const QUESTIONS = [
     correct: 3,
   },
   {
+    question: "What is 2*2+2?",
+    answers: ["2", "4", "6", "8"],
+    correct: 2,
+  },
+  {
     question: "What is 9*9?",
     answers: ["18", "81", "80", "79"],
     correct: 1,
   },
   {
     question: "What is the capital of Germany?",
-    answers: ["	Hamburg", "München", "Dortmund", "Berlin"],
+    answers: ["Hamburg", "München", "Dortmund", "Berlin"],
     correct: 3,
   },
 ];
@@ -44,7 +49,7 @@ const Quiz = () => {
         </>
       )}
       {currentQuestion >= QUESTIONS.length && (
-        <p>{`You scored ${(score / QUESTIONS.length) * 100}%`}</p>
+        <p>{`You scored ${score} of ${QUESTIONS.length}`}</p>
       )}
     </div>
   );
