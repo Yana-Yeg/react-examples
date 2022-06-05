@@ -1,7 +1,7 @@
-import { Suspense } from "react";
-import { NavLink } from "react-router-dom";
-import { Switch } from "react-router-dom";
-import { BrowserRouter as Route } from "react-router-dom";
+// import { Suspense } from "react";
+// import { NavLink } from "react-router-dom";
+// import { Switch } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import ConverterPage from "./pages/ConverterPage";
 import HomePage from "./pages/HomePage";
@@ -10,11 +10,47 @@ import ChecklistPage from "./pages/ChecklistPage";
 import ShortListPage from "./pages/ShortListPage";
 import QuizPage from "./pages/QuizPage";
 import RandomuserPage from "./pages/RandomuserPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
     <>
-      <nav style={{ borderBottom: "2px solid lightgrey" }}>
+      <header style={{ borderBottom: "2px solid lightgrey" }}>
+        <Link to="/" className="link" activeClassName="activeLink">
+          Home
+        </Link>
+        <Link to="/cats" className="link" activeClassName="activeLink">
+          Cats
+        </Link>
+        <Link to="/converter" className="link" activeClassName="activeLink">
+          Currency converter
+        </Link>
+        <Link to="/checklist" className="link" activeClassName="activeLink">
+          Checklist
+        </Link>
+        <Link to="/shortlist" className="link" activeClassName="activeLink">
+          Shortlist
+        </Link>
+        <Link to="/quiz" className="link" activeClassName="activeLink">
+          Quiz
+        </Link>
+        <Link to="/randomuser" className="link" activeClassName="activeLink">
+          Randomuser
+        </Link>
+      </header>
+      {/* <Suspense fallback={<div>Loading...</div>}> */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/cats" element={<CatsPage />} />
+        <Route path="/converter" element={<ConverterPage />} />
+        <Route path="/checklist" element={<ChecklistPage />} />
+        <Route path="/shortlist" element={<ShortListPage />} />
+        <Route path="/quiz" element={<QuizPage />} />
+        <Route path="/randomuser" element={<RandomuserPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+      {/* </Suspense> */}
+      {/* <nav style={{ borderBottom: "2px solid lightgrey" }}>
         <NavLink to="/" exact className="link" activeClassName="activeLink">
           Home
         </NavLink>
@@ -36,9 +72,9 @@ function App() {
         <NavLink to="/randomuser" className="link" activeClassName="activeLink">
           Randomuser
         </NavLink>
-      </nav>
+      </nav> */}
 
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <Switch>
           <Route path="/cats">
             <CatsPage />
@@ -62,7 +98,7 @@ function App() {
             <HomePage />
           </Route>
         </Switch>
-      </Suspense>
+      </Suspense> */}
     </>
   );
 }
