@@ -11,7 +11,7 @@ import ShortListPage from "./pages/ShortListPage";
 import QuizPage from "./pages/QuizPage";
 import RandomuserPage from "./pages/RandomuserPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import Nav from "./components/Navigation/Nav";
+import Nav from "./components/--navigation/Navigation/Nav";
 
 function App() {
   return (
