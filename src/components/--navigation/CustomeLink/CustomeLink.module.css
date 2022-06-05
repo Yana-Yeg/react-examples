@@ -1,0 +1,12 @@
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 25px;
+    font-weight: 500;
+    color: lightslategrey;
+}
+.link:hover {
+    color: blueviolet;
+}
