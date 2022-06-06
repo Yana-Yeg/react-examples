@@ -1,7 +1,7 @@
 // import { Suspense } from "react";
 // import { NavLink } from "react-router-dom";
 // import { Switch } from "react-router-dom";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import ConverterPage from "./pages/ConverterPage";
 import HomePage from "./pages/HomePage";
@@ -12,6 +12,9 @@ import QuizPage from "./pages/QuizPage";
 import RandomuserPage from "./pages/RandomuserPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Nav from "./components/--navigation/Navigation/Nav";
+import PostsPage from "./pages/PostsPage";
+import SinglePostsPage from "./pages/SinglePostPage";
+import EditPost from "./pages/EditPost";
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
           <Route path="shortlist" element={<ShortListPage />} />
           <Route path="quiz" element={<QuizPage />} />
           <Route path="randomuser" element={<RandomuserPage />} />
+          <Route path="posts" element={<PostsPage />} />
+          <Route path="posts/:id" element={<SinglePostsPage />} />
+          <Route path="posts/:id/edit" element={<EditPost />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
