@@ -29,7 +29,13 @@ const Nav = () => {
         <Outlet />
       </main>
 
-      <footer className={style.container}>2022</footer>
+      <footer className={style.container}>
+        <div class="container">
+          <p class="footer-text">
+            &copy; 2022 | My examples| Developed by Yana Yegorina
+          </p>
+        </div>
+      </footer>
     </>
   );
 };
