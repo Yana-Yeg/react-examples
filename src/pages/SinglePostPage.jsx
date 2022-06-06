@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
-const SinglePostsPage = () => {
+const SinglePostPage = () => {
   const { id } = useParams();
   const [post, setPost] = useState(null);
 
@@ -25,4 +25,4 @@ const SinglePostsPage = () => {
   );
 };
 
-export default SinglePostsPage;
+export default SinglePostPage;
