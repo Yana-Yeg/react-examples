@@ -12,6 +12,8 @@ const Nav = () => {
         <CustomeLink to="/converter">Currency converter</CustomeLink>
         <CustomeLink to="/checklist">Checklist</CustomeLink>
         <CustomeLink to="/shortlist">Shortlist</CustomeLink>
+        <CustomeLink to="/posts">Posts</CustomeLink>
+        {/* <CustomeLink to="/shortlist">Shortlist</CustomeLink> */}
 
         {/* or can use NavLink & className={style.link} */}
 
