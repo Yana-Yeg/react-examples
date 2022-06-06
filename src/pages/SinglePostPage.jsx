@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 const SinglePostPage = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [post, setPost] = useState(null);
+
+  const goBack = () => navigate(-1);
 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
@@ -14,6 +16,7 @@ const SinglePostPage = () => {
 
   return (
     <div>
+      <button onClick={goBack}>Go back</button>
       {post && (
         <>
           <h1>{post.title}</h1>
