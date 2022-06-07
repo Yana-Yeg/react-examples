@@ -18,20 +18,34 @@ code {
 } */
 .postsPage_ul {
   margin: 0px auto;
-  max-width: 1000px;
+  max-width: 1100px;
   text-align: left;
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(4, 1fr);
-  list-style-type: disclosure-open;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 3fr 2fr 1fr 1fr;
+  list-style-type: none;
 }
 
 .postsPage_li {
-  border: 2px solid blue;
   border-radius: 5px;
   padding: 10px;
+  background-color: rgb(238, 237, 245);
 }
 
+.postsPage_svg_news{
+  width: 48px;
+  height: 48px;
+  display: flex;
+  position: absolute;
+  top: -5%;
+  right: 42%;
+}
+.postsPage_svg_post {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
 .singlePostPage_btn {
   width: 100px;
   margin: 20px 0px 0px 40px;

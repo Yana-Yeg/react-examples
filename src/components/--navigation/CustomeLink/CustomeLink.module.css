@@ -6,7 +6,9 @@
     font-size: 25px;
     font-weight: 500;
     color: lightslategrey;
+   
 }
 .link:hover {
     color: blueviolet;
+    background-image: repeating-linear-gradient(to top, blueviolet 0px 0px, transparent 5px 50px);
 }

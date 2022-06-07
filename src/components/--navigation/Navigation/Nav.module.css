@@ -21,6 +21,7 @@ header, footer {
 }
 .link:hover {
     color: blueviolet;
+    background-image: repeating-linear-gradient(to top, blueviolet 0px 0px, transparent 5px 50px);
 }
 main{
     min-height: 100vh;
