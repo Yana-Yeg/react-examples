@@ -5,7 +5,7 @@ import style from "./Nav.module.css";
 const Nav = () => {
   return (
     <>
-      <header style={{ borderBottom: "2px solid lightgrey" }}>
+      <header>
         {/* can use CustomeLink => this code looks clear */}
         <CustomeLink to="/">Home</CustomeLink>
         <CustomeLink to="/cats">Cats</CustomeLink>
@@ -32,7 +32,7 @@ const Nav = () => {
       <footer className={style.container}>
         <div class="container">
           <p class="footer-text">
-            &copy; 2022 | My examples| Developed by Yana Yegorina
+            &copy; 2022 | My examples | Developed by Yana Yegorina
           </p>
         </div>
       </footer>

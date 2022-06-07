@@ -13,11 +13,14 @@ const PostsPage = () => {
   return (
     <div>
       <h1>Our news</h1>
-      {posts.map((post) => (
-        <Link key={post.id} to={`/posts/${post.id}`}>
-          <li>{post.title}</li>
-        </Link>
-      ))}
+      <ul className="postsPage_ul">
+        {posts &&
+          posts.map((post) => (
+            <li key={post.id} className="postsPage_li">
+              <Link to={`/posts/${post.id}`}>{post.title} </Link>
+            </li>
+          ))}
+      </ul>
     </div>
   );
 };

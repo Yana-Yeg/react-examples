@@ -16,12 +16,19 @@ const SinglePostPage = () => {
 
   return (
     <div>
-      <button onClick={goBack}>Go back</button>
+      <button onClick={goBack} className="singlePostPage_btn">
+        Go back
+      </button>
       {post && (
         <>
           <h1>{post.title}</h1>
           <p>{post.body}</p>
-          <Link to={`/posts/${id}/edit`}>Edit this post</Link>
+          <Link
+            to={`/posts/${id}/edit`}
+            className="singlePostPage_btn link_btn"
+          >
+            Edit this post
+          </Link>
         </>
       )}
     </div>
