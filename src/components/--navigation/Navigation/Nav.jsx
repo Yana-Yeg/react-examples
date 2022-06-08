@@ -9,9 +9,10 @@ const Nav = () => {
       <header>
         {/* can use CustomeLink => this code looks clear */}
         <CustomeLink to="/">
-          <svg className={style.icon}>
+          {/* <svg className={style.icon}>
             <use xlinkHref={`${Icons}#icon-home3`} />
-          </svg>
+          </svg> */}
+          Home
         </CustomeLink>
         <CustomeLink to="/cats">Cats</CustomeLink>
         <CustomeLink to="/converter">Currency converter</CustomeLink>
