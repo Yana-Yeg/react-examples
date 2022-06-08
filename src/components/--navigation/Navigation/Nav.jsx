@@ -1,13 +1,18 @@
 import { NavLink, Outlet } from "react-router-dom";
 import CustomeLink from "../CustomeLink/CustomeLink";
 import style from "./Nav.module.css";
+import Icons from "../../../images/sprite.svg";
 
 const Nav = () => {
   return (
     <>
       <header>
         {/* can use CustomeLink => this code looks clear */}
-        <CustomeLink to="/">Home</CustomeLink>
+        <CustomeLink to="/">
+          <svg className={style.icon}>
+            <use xlinkHref={`${Icons}#icon-home3`} />
+          </svg>
+        </CustomeLink>
         <CustomeLink to="/cats">Cats</CustomeLink>
         <CustomeLink to="/converter">Currency converter</CustomeLink>
         <CustomeLink to="/checklist">Checklist</CustomeLink>
