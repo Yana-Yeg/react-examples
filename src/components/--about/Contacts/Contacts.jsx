@@ -15,23 +15,77 @@ const Contacts = () => {
             <use xlinkHref={`${Icons}#icon-location`} />
           </svg>
           <h3>Address</h3>
-          <p>al. Architects 10B 54-115 Wroclaw</p>
+          <a
+            href="https://goo.gl/maps/5ymqvmsGVsiengHQA/"
+            target="_blank"
+            className={style.map}
+            rel="noreferrer"
+          >
+            al. Architects 10B 54-115 Wroclaw
+          </a>
         </li>
         <li className={style.item}>
           <svg className={style.icon}>
             <use xlinkHref={`${Icons}#icon-email`} />
           </svg>
           <h3>Email</h3>
-          <p>kontakt@architekciusmiechu.pl</p>
+          <a href="mailto:info@example.com" className={style.email}>
+            kontakt@architekciusmiechu.pl
+          </a>
         </li>
         <li className={style.item}>
           <svg className={style.icon}>
             <use xlinkHref={`${Icons}#icon-phone`} />
           </svg>
           <h3>Tel</h3>
-          <p> 607 706 890</p>
+          <a href="tel:+48607706890" className={style.phone}>
+            607 706 890
+          </a>
         </li>
       </ul>
+      <div>
+        <div className={style.contact}>
+          <p className={style.contact_text}>Find us</p>
+        </div>
+        <ul className={style.list_icons}>
+          <li className={style.list_item}>
+            <a
+              href="https://www.instagram.com/natadent_stomatologia/"
+              target="_blank"
+              className={style.list_link}
+              rel="noreferrer"
+            >
+              <svg className={style.svg}>
+                <use xlinkHref={`${Icons}#icon-instagram`} />
+              </svg>
+            </a>
+          </li>
+          <li className={style.list_item}>
+            <a
+              href="https://t.me/CreativeDentistry"
+              target="_blank"
+              className={style.list_link}
+              rel="noreferrer"
+            >
+              <svg className={style.svg}>
+                <use xlinkHref={`${Icons}#icon-telega`} />
+              </svg>
+            </a>
+          </li>
+          <li className={style.list_item}>
+            <a
+              href="https://www.facebook.com/groups/215773488773090"
+              target="_blank"
+              className={style.list_link}
+              rel="noreferrer"
+            >
+              <svg className={style.svg}>
+                <use href={`${Icons}#icon-fbook`}></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
