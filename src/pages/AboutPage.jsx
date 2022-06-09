@@ -15,6 +15,9 @@ const AboutPage = () => {
           <Link to="contacts">Our contacts</Link>
         </li>
         <li style={{ marginLeft: "20px" }}>
+          <Link to="form">Form</Link>
+        </li>
+        <li style={{ marginLeft: "20px" }}>
           <Link to="team">Our team</Link>
         </li>
       </ul>
