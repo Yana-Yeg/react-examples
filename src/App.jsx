@@ -15,6 +15,8 @@ import Nav from "./components/--navigation/Navigation/Nav";
 import PostsPage from "./pages/PostsPage";
 import SinglePostsPage from "./pages/SinglePostPage";
 import EditPost from "./pages/EditPost";
+import AboutPage from "./pages/AboutPage";
+import Contacts from "./components/--about/Contacts/Contacts";
 
 function App() {
   return (
@@ -32,6 +34,10 @@ function App() {
           <Route path="posts" element={<PostsPage />} />
           <Route path="posts/:id" element={<SinglePostsPage />} />
           <Route path="posts/:id/edit" element={<EditPost />} />
+          <Route path="about" element={<AboutPage />}>
+            <Route path="contacts" element={<Contacts />} />
+            <Route path="team" element={<p>Our team</p>} />
+          </Route>
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
