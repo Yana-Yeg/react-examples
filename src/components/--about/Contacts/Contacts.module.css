@@ -1,0 +1,24 @@
+.wrapper {
+        background-color: orange;
+            max-width: 600px;
+            display: inline-block;
+}
+.list {
+    list-style-type: none;
+        margin-left: 150px;
+        text-align: left;
+}
+.item {
+    position: relative;
+}
+.icon {
+    position: absolute;
+        top: -5.7%;
+        left: -11%;
+        width: 26px;
+        height: 26px;
+        fill: white;
+}
+.text {
+    padding: 0 40px;
+}
