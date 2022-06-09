@@ -17,6 +17,7 @@ import SinglePostsPage from "./pages/SinglePostPage";
 import EditPost from "./pages/EditPost";
 import AboutPage from "./pages/AboutPage";
 import Contacts from "./components/--about/Contacts/Contacts";
+import Form from "./components/--about/Form/Form";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="posts/:id/edit" element={<EditPost />} />
           <Route path="about" element={<AboutPage />}>
             <Route path="contacts" element={<Contacts />} />
+            <Route path="form" element={<Form />} />
             <Route path="team" element={<p>Our team</p>} />
           </Route>
           <Route path="*" element={<NotFoundPage />} />
