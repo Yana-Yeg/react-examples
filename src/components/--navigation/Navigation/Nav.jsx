@@ -8,12 +8,7 @@ const Nav = () => {
     <>
       <header>
         {/* can use CustomeLink => this code looks clear */}
-        <CustomeLink to="/">
-          {/* <svg className={style.icon}>
-            <use xlinkHref={`${Icons}#icon-home3`} />
-          </svg> */}
-          Home
-        </CustomeLink>
+        <CustomeLink to="/">Home</CustomeLink>
         <CustomeLink to="/cats">Cats</CustomeLink>
         <CustomeLink to="/converter">Currency converter</CustomeLink>
         <CustomeLink to="/checklist">Checklist</CustomeLink>
@@ -28,6 +23,9 @@ const Nav = () => {
         </NavLink>
         <NavLink to="/randomuser" className={style.link}>
           Randomuser
+        </NavLink>
+        <NavLink to="/about" className={style.link}>
+          About
         </NavLink>
       </header>
 
