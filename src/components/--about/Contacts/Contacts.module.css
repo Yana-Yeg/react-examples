@@ -1,17 +1,21 @@
 .wrapper {
     background-color: orange;
-    max-width: 600px;
+    /* max-width: 600px; */
+    max-width: 400px;
     display: inline-block;
+    padding: 50px 0;
 }
 
 .list {
     list-style-type: none;
-    margin-left: 150px;
+    /* margin-left: 150px; */
+    margin-left: 50px;
     text-align: left;
 }
 
 .item {
     position: relative;
+    margin-bottom: 20px;
 }
 
 .icon {
@@ -27,7 +31,6 @@
     padding: 0 40px;
 }
 .phone, .email, .map{
-    /* text-decoration: none; */
     color: black;
 }
 /* ---------------------------- */
@@ -49,6 +52,7 @@
     margin-bottom: 45px;
     padding: 0px 40px;
     list-style-type: none;
+    margin-top: 25px;
 }
 
 .list_item {
