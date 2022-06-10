@@ -44,8 +44,10 @@ const Form = () => {
   return (
     <>
       <form className={s.form} onSubmit={handleSubmit} autocomplete="off">
+        <h1>Feedback form</h1>
+        <p className={s.text}>Fields marked with * are required</p>
         <label className={s.label} htmlFor={nameInputId.current}>
-          Name
+          Name *
           <input
             className={s.input}
             type="text"
@@ -60,7 +62,7 @@ const Form = () => {
         </label>
 
         <label className={s.label} htmlFor={numberInputId.current}>
-          Email
+          Email *
           <input
             className={s.input}
             type="tel"
@@ -74,13 +76,13 @@ const Form = () => {
         </label>
 
         <label className={s.label} htmlFor={numberInputId.current}>
-          Message
+          Message...
           <textarea
             className={s.textarea}
             name=""
             id=""
-            cols="30"
-            rows="5"
+            cols="42"
+            rows="8"
           ></textarea>
         </label>
         <button className={s.formBtn} type="submit" disabled={!number && !name}>
