@@ -1,10 +1,12 @@
 import { Link, Outlet } from "react-router-dom";
+import Contacts from "../components/--about/Contacts/Contacts";
+import Form from "../components/--about/Form/Form";
 
 const AboutPage = () => {
   return (
     <>
       <h1 style={{ textAlign: "center" }}>About us</h1>
-      <ul
+      {/* <ul
         style={{
           display: "flex",
           justifyContent: "center",
@@ -20,8 +22,12 @@ const AboutPage = () => {
         <li style={{ marginLeft: "20px" }}>
           <Link to="team">Our team</Link>
         </li>
-      </ul>
-      <Outlet />
+      </ul> */}
+      {/* <Outlet /> */}
+      <div>
+        <Form />
+        <Contacts />
+      </div>
     </>
   );
 };
